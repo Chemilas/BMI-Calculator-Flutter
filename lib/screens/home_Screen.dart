@@ -2,7 +2,6 @@ import 'package:bmi_calculator/screens/result_Screen.dart';
 import 'package:bmi_calculator/widgets/custom_Text.dart';
 import 'package:bmi_calculator/widgets/custom_Textfield.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -31,18 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     getString();
-    // TODO: implement initState
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: ()async{
-        SystemNavigator.pop();
-        return true;
-      },
-      child: Scaffold(
+    return Scaffold(
         backgroundColor: CustomTextField.backcolour,
         body: SafeArea(
             child: Center(
@@ -93,7 +86,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
             )),
-      ),
     );
   }
 
