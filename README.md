@@ -1,6 +1,6 @@
 # BMIer
 
-A Simple BMI Calculator App developed using Flutter.
+A Simple BMI Calculator Application developed using Flutter.
 
 Screenshots:
 
