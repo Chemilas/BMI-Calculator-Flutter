@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
   TextEditingController heightController = TextEditingController();
   TextEditingController weightController = TextEditingController();
 
-  late SharedPreferences preferences ;
+  late SharedPreferences preferences;
 
   void setString()async{
     preferences = await SharedPreferences.getInstance();
