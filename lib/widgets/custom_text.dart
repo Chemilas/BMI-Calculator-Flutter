@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:bmi_calculator/widgets/custom_Textfield.dart';
+import 'package:bmi_calculator/widgets/custom_textfield.dart';
 
 class CustomText extends StatelessWidget {
   const CustomText({super.key, this.fontSize, this.letterSpacing, this.fontWeight, required this.text, this.color, this.textAlign});
@@ -17,7 +17,7 @@ class CustomText extends StatelessWidget {
     return Text(
       text,
       style: GoogleFonts.poppins(
-          color: color ?? CustomTextField.frontcolor,
+          color: color ?? CustomTextField.frontColor,
           fontSize: fontSize ?? 40,
           letterSpacing: letterSpacing,
           fontWeight: fontWeight),

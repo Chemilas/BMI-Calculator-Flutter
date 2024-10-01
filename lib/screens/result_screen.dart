@@ -1,5 +1,5 @@
-import 'package:bmi_calculator/widgets/custom_Text.dart';
-import 'package:bmi_calculator/widgets/custom_Textfield.dart';
+import 'package:bmi_calculator/widgets/custom_text.dart';
+import 'package:bmi_calculator/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 
 class Results extends StatefulWidget {
@@ -26,7 +26,7 @@ class _ResultsState extends State<Results> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTextField.backcolour,
+      backgroundColor: CustomTextField.backColour,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

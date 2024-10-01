@@ -1,8 +1,8 @@
 import 'dart:async';
-import 'package:bmi_calculator/widgets/custom_Text.dart';
-import 'package:bmi_calculator/widgets/custom_Textfield.dart';
+import 'package:bmi_calculator/widgets/custom_text.dart';
+import 'package:bmi_calculator/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
-import 'home_Screen.dart';
+import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Image.asset('assets/images/splash.png',fit: BoxFit.cover,),
             ),
             const SizedBox(height: 15,),
-            const CustomText(text: 'CHECK YOUR BMI!',fontSize: 30,color: CustomTextField.backcolour,)
+            const CustomText(text: 'CHECK YOUR BMI!',fontSize: 30,color: CustomTextField.backColour,)
           ],
         ),
       ),

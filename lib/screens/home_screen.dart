@@ -1,6 +1,6 @@
-import 'package:bmi_calculator/screens/result_Screen.dart';
-import 'package:bmi_calculator/widgets/custom_Text.dart';
-import 'package:bmi_calculator/widgets/custom_Textfield.dart';
+import 'package:bmi_calculator/screens/result_screen.dart';
+import 'package:bmi_calculator/widgets/custom_text.dart';
+import 'package:bmi_calculator/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: CustomTextField.backcolour,
+        backgroundColor: CustomTextField.backColour,
         body: SafeArea(
             child: Center(
               child: Padding(
@@ -74,12 +74,12 @@ class _HomeScreenState extends State<HomeScreen> {
                                 )));
                               },
                               style: ElevatedButton.styleFrom(
-                                backgroundColor: CustomTextField.frontcolor,
+                                backgroundColor: CustomTextField.frontColor,
                                 shape: const StadiumBorder(),
                               ),
                               child: const CustomText(
                                 text: 'Calculate',
-                                color: CustomTextField.backcolour,
+                                color: CustomTextField.backColour,
                               )))
                     ],
                   ),
