@@ -1,5 +1,6 @@
 import 'package:bmier/views/splash.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 void main(){
@@ -19,9 +20,13 @@ class BMIApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'BMIer',
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      theme: ThemeData(
+        textTheme: GoogleFonts.poppinsTextTheme()
+      ),
+      home: const SplashScreen(),
     );
   }
 }

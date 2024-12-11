@@ -14,7 +14,7 @@ class Results extends StatefulWidget {
 class _ResultsState extends State<Results> {
 
   String comment() {
-    if ( widget.result! >= 25) {
+    if (widget.result! >= 25) {
       return 'You are Overweight.\nYou Should consider a Diet!';
     } else if (widget.result! > 18.5) {
       return 'You are having a normal BMI.';
@@ -22,6 +22,8 @@ class _ResultsState extends State<Results> {
       return 'You are Underweight.\nYou Should Eat More!';
     }
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +37,6 @@ class _ResultsState extends State<Results> {
           const CustomText(text: 'Your BMI is ',fontSize: 50,),
           CustomText(text: widget.result!.toStringAsFixed(2),fontSize: 90,),
           CustomText(text: comment(),fontSize: 30,textAlign: TextAlign.center,),
-
         ],),
       ),
     );

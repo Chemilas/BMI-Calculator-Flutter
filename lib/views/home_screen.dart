@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
     heightController.text = preferences.getString("height") ?? '';
   }
 
-  double? _result;
+  double? _result; // BMI Result
 
   @override
   void initState() {
@@ -86,12 +86,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 65,
                     child: ElevatedButton(
                         onPressed: () {
+
                           setString(); // Store Text Field Strings locally
 
-                          calculateBMI();
+                          calculateBMI(); // Calculate BMI
 
                           Navigator.of(context).push(MaterialPageRoute(
                               builder: (context) => Results(result: _result,)));
+
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: CustomTextField.frontColor,
@@ -106,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       )),
-      bottomNavigationBar: const BannerAdWidget(),
+      // bottomNavigationBar: const BannerAdWidget(),
     );
   }
 

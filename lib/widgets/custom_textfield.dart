@@ -17,9 +17,8 @@ class CustomTextField extends StatelessWidget {
       height: 90,
       width: 290,
       child: TextFormField(
-        inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+        inputFormatters: [FilteringTextInputFormatter.digitsOnly,LengthLimitingTextInputFormatter(3)],
         keyboardType: TextInputType.number,
-        maxLength: 3,
         cursorColor: frontColor,
         style: GoogleFonts.poppins(fontSize: 30,fontWeight: FontWeight.w500,color: Colors.white),
          controller: controller,
