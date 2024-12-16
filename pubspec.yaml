@@ -16,6 +16,7 @@ dependencies:
   shared_preferences: ^2.3.2    # Local Storage
   google_fonts: ^6.2.1          # Custom Fonts
   google_mobile_ads: ^5.2.0     # Google Ads
+  giff_dialog: ^1.0.1           # Gif Dialog
 
 
 dev_dependencies:

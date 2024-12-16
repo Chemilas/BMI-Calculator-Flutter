@@ -1,9 +1,10 @@
+import 'package:bmier/res/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:bmier/widgets/custom_textfield.dart';
 
 class CustomText extends StatelessWidget {
-  const CustomText({super.key, this.fontSize, this.letterSpacing, this.fontWeight, required this.text, this.color, this.textAlign});
+  const CustomText({super.key, this.fontSize, this.letterSpacing,
+    this.fontWeight, required this.text, this.color, this.textAlign});
 
   final double? fontSize;
   final double? letterSpacing;
@@ -17,7 +18,7 @@ class CustomText extends StatelessWidget {
     return Text(
       text,
       style: GoogleFonts.poppins(
-          color: color ?? CustomTextField.frontColor,
+          color: color ?? AppColors.secondary,
           fontSize: fontSize ?? 40,
           letterSpacing: letterSpacing,
           fontWeight: fontWeight),

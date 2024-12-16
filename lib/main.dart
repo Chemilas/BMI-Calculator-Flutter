@@ -1,4 +1,5 @@
-import 'package:bmier/views/splash.dart';
+import 'package:bmier/res/colors.dart';
+import 'package:bmier/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
@@ -24,7 +25,9 @@ class BMIApp extends StatelessWidget {
       title: 'BMIer',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        textTheme: GoogleFonts.poppinsTextTheme()
+        textTheme: GoogleFonts.poppinsTextTheme(),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
+        useMaterial3: false
       ),
       home: const SplashScreen(),
     );

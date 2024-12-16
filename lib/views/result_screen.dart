@@ -1,6 +1,7 @@
 import 'package:bmier/widgets/custom_text.dart';
-import 'package:bmier/widgets/custom_textfield.dart';
 import 'package:flutter/material.dart';
+
+import '../res/colors.dart';
 
 class Results extends StatefulWidget {
   const Results({super.key, this.result, });
@@ -28,7 +29,7 @@ class _ResultsState extends State<Results> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: CustomTextField.backColour,
+      backgroundColor: AppColors.primary,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
