@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         )),
-        bottomNavigationBar: const BannerAdWidget(),
+        // bottomNavigationBar: const BannerAdWidget(),
       ),
     );
   }
